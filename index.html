@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bhavika</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">BHAVIKA's PORTFOLIO</td>
+                <td id="navigation">
+                    <a href="#bio">About</a>
+                  <a href="#bio">Workshop</a> <a href="#work">My Photo Gallery </a>
+            
+                    <a href="">Education</a>
+                    <a href="#contact">Contact</a>
+                  
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+               <br><br> <h1>"Love the life you live. Live the life you love.”</h1>
+                <button class="btn_one">Find me</button><br>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"><i class="fab fa-medium"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>my photo gallery</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="<a href="https://lh3.googleusercontent.com/GCIjzq8Cumrzogc1kqKXS3klN-ZJ1LCISzMbHMPCC8yaahqrZ31R749Mc9vmpeL9hZj_h37D3j2Qe8MWk7T_x2r4bRmS-wn6-AdHoCDqYer5yAzggUQN3glprYrX9pozXhgPu9IDOz4=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/GCIjzq8Cumrzogc1kqKXS3klN-ZJ1LCISzMbHMPCC8yaahqrZ31R749Mc9vmpeL9hZj_h37D3j2Qe8MWk7T_x2r4bRmS-wn6-AdHoCDqYer5yAzggUQN3glprYrX9pozXhgPu9IDOz4=w600-h315-p-k" /> </a>">
+            <img onclick="magnify($(this).attr('src'))" src="<a href="https://lh3.googleusercontent.com/2xv2Q8dG3q3ldIdlLhqgby0iQuonrGyDhbp8ozvH6fP5zxlNeUFPYm4f6O2WuB99Aq4l_hkPcCmjDM0WnpdOr5cEJzKNcROqEUg6z76e2E0-s_pyn4w0mLeNsPtzHJZuquU0AKOtBdA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/2xv2Q8dG3q3ldIdlLhqgby0iQuonrGyDhbp8ozvH6fP5zxlNeUFPYm4f6O2WuB99Aq4l_hkPcCmjDM0WnpdOr5cEJzKNcROqEUg6z76e2E0-s_pyn4w0mLeNsPtzHJZuquU0AKOtBdA=w600-h315-p-k" /> </a>">
+            <img onclick="magnify($(this).attr('src'))" src="<a href="https://lh3.googleusercontent.com/xlfWo2wfcy6GsosJEuixKZfbQ0ozn4DmVYEAPTwEQmDjXh2i5xLAzrJlEv9URr6EkBMU2sxnowhUwMtksBWQ-CE94EEc0S1arge4Vuc99-Te69wzNwPpMPM2kgQFueV6PJQfMHyXxsY=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/xlfWo2wfcy6GsosJEuixKZfbQ0ozn4DmVYEAPTwEQmDjXh2i5xLAzrJlEv9URr6EkBMU2sxnowhUwMtksBWQ-CE94EEc0S1arge4Vuc99-Te69wzNwPpMPM2kgQFueV6PJQfMHyXxsY=w600-h315-p-k" /> </a>">
+            <img onclick="<a href="https://lh3.googleusercontent.com/HPe54jRAOJ-NX8mE_s5ktf7FGcG2ajLS-aV7eZH8MDc3jsPQeGI1bLk6TIr-hxMiXVe89hi0FgsgQ1Y0ll2pZ1-wTPaJtKQvbaH79rjxybJbOQNtyEnGEFNkzV2UdsDuLNy4jdV6r5Y=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/HPe54jRAOJ-NX8mE_s5ktf7FGcG2ajLS-aV7eZH8MDc3jsPQeGI1bLk6TIr-hxMiXVe89hi0FgsgQ1Y0ll2pZ1-wTPaJtKQvbaH79rjxybJbOQNtyEnGEFNkzV2UdsDuLNy4jdV6r5Y=w-p-k" /> </a>>
+            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547149666-769b42053e67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80">
+            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547950515-e652d0f50b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1545342084-d03fe58ea023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80">
+        </div>
+    </div>
+    <div id="bio">
+        <h1>About</h1>
+        <p>
+Hello! My name is Bhavika Rustagi and I am currently studying at SRM University,Chennai. I love travelling, watching movies and looking forward to trying new things. I have always been fascinated by web development and this is my chance to explore it.
+        </p>
+                 <div id="bio h1">
+        <h1>Workshop</h1>
+        <p>
+        <p>
+            DAY 01:explored codepen and how to set up github.<br>
+            DAY 02:learnt how to fork and purpose of repositories in github by making a calculator.   <br>             
+           DAY 03:tested javascript games, modified the games by adding our personal touch. Also got to know about various helpful sites like kaggle, the oracle of bacon and zoho analytics and experimented with datas there.<br>
+           DAY 04:   
+                                 
+        </p>
+                  <p>
+    </div>
+    <div id="contact">
+        <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +919992939378</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp;br9417@srmist.edu.in</td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fas fa-fax"></i> &nbsp; +919393289991</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        SRM Institute of Science and technology<br>
+                                        Chennai city,<br>
+                                        India
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social"><i class="fab fa-facebook"></i></a>
+                                        <a class="social"><i class="fab fa-twitter"></i></a>
+                                        <a class="social"><i class="fab fa-instagram"> <ahref="https://www.instagram.com/?__coig_login=1">https://www.instagram.com/?__coig_login=1</a></i>
+</a>
+                                        <a class="social"><i class="fab fa-dribbble"></i></a>
+                                        <a class="social"><i class="fab fa-medium"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="your message" required rows="5"></textarea><br>
+                            <button class="btn_one">send</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+        made by bhavika<br> <a <a href="mailto:br9417@srmist.edu.in" target="_blank"
+                        rel="noopener">say hello</a></i></a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
